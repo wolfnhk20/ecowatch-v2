@@ -69,9 +69,8 @@ Go to `http://127.0.0.1:5000` in your browser.
 ---
 
 ## **🖼️ Screenshots**
-To include screenshots, add them to a `screenshots/` folder and reference them like this:
 ```md
-![Wildlife Recognition](screenshots/wildlife_demo.png)
+![Wildlife Recognition](screenshots/Screenshot 2025-03-22 130758.png)
 ```
 
 ---
