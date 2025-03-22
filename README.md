@@ -70,7 +70,8 @@ Go to `http://127.0.0.1:5000` in your browser.
 
 ## **🖼️ Screenshots**
 ```md
-![Wildlife Recognition](screenshots/Screenshot 2025-03-22 130758.png)
+![image](https://github.com/user-attachments/assets/719aa45a-f6dc-448f-bbfe-529b1b676efe)
+
 ```
 
 ---
