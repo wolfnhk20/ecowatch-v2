@@ -14,7 +14,7 @@ def index():
     return render_template("index.html")
 
 @app.route('/data.json')
-def serve_json():
+def get_data():
     return send_from_directory('static', 'data.json')
 
 @app.route("/identify", methods=["POST"])
