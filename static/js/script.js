@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
             processData: false,
             success: function (response) {
                 console.log(response);
-                search(response.label.toString());
+                search(response.labels[0].toString());
             },
             error: function () {
                 displaySpeciesNotFound();
