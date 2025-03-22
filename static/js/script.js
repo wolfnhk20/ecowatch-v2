@@ -102,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
             processData: false,
             success: function (response) {
                 console.log(response);
+                if(response.error == 'No species detected')
+                    displaySpeciesNotFound();
                 search(response.labels[0].toString());
             },
             error: function () {
