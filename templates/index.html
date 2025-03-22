@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>EcoWatchAI</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>🌿EcoWatchAI🌿</h1>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro fade-in" id="intro">
+        <h2>Welcome to EcoWatchAI</h2>
+        <p>EcoWatchAI helps you identify wildlife species using AI-powered image recognition. Protect biodiversity and
+            enhance your understanding of nature.</p>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-container fade-in">
+        <div class="search-input-container">
+            <input type="text" id="searchBar" placeholder="🔍 Search Wildlife species...">
+            <button onclick="search(document.getElementById('searchBar').value)" class="btn-info">
+                <img src="{{ url_for('static', filename='images/search.png') }}" alt="Search">
+            </button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features fade-in">
+        <div class="feature">
+            <div class="upload-section">
+                <h3>📸Upload an Image</h3>
+                <p>Drag & Drop an image or click to upload.</p>
+            
+                <div class="upload-box" id="drop-area">
+                    <input type="file" id="uploadInput" accept="image/*" onchange="handleFiles(this.files)">
+                    <!-- <label for="uploadInput"></label> -->
+                    <p id="upload-text"> Click to upload <br><br> or Drag & Drop an Image Here</p>
+                </div>
+            
+                <button onclick="uploadMedia()" class="upload-btn">Upload Image</button>
+            </div>
+        </div>
+
+        <div class="or-divider">OR</div>
+
+        <div class="feature">
+            <h3>🎥 Camera Recognition</h3>
+            <p>Use your device's camera to identify wildlife species in real-time.</p>
+            <div class="camera-container">
+                <video id="camera" autoplay playsinline></video>
+                
+            </div>
+            <div class="buttons-section">
+                <button onclick="startCamera()" class="btn-primary">▶ Start</button>
+                <button onclick="stopCamera()" class="btn-danger">⏹ Stop</button>
+                <button onclick="captureImage()" class="btn-success">📸 Capture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Preview & Identification -->
+    <section class="detection-section fade-in">
+        <div id="preview-section" class="preview-container">
+            <p id="preview-text">📷 Captured/Uploaded Image</p>
+            <img id="preview-image" src="#" alt="Preview">
+            <div class="action-buttons">
+                <button onclick="identifySpecies()" class="btn-warning" type="submit" id="identify-button">🔍 Identify</button>
+                <button onclick="resetApp()" class="btn-secondary">🔄 Reset</button>
+            </div>
+        </div>
+
+        <!-- Processing & Results -->
+        <div id="processed-section" class="preview-container fade-in">
+            <!-- <p id="processed-text"></p> -->
+            <p id="processed-info" class="processed-info"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 EcoWatchAI. All rights reserved.</p>
+            <p>Developed by – <a href="https://github.com/wolfnhk20" target="_blank">ayush.</a></p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+
+</html>

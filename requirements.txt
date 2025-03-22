@@ -1,0 +1,5 @@
+flask
+pillow
+ultralytics
+tensorflow
+gunicorn
