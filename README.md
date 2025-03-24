@@ -9,7 +9,6 @@
 ✔️ **Supports Image Upload & Camera Capture**  
 ✔️ **Mobile Responsive UI**  
 ✔️ **Fast Inference & Search**  
-✔️ **Deployable on Render**  
 
 ---
 
@@ -75,9 +74,10 @@ Go to `http://127.0.0.1:8000` in your browser.
 ---
 
 ## **🛠️ Future Enhancements**
-✅ Add more species  
-✅ Improve UI animations  
-✅ Enhance accuracy with more training data  
+✅ Add more species.  
+✅ Enhance accuracy with more training data.
+✅ Can be used in schools for education on wildlife.
+✅ Can be used in zoos for an engaging and interactive information display.
 
 ---
 
