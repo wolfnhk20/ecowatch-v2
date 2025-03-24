@@ -15,13 +15,15 @@
 
 ## **📂 Project Structure**
 ```
-├── static/              # Static assets (CSS, JS, images, data)
-│   ├── styles.css       # Main CSS file
-│   ├── script.js        # Main JavaScript logic
+├── static/       # Static assets (CSS, JS, images, data)
+│   ├── css
+│   │   ├── styles.css       # Main CSS file
+│   ├── js
+│   │   ├── script.js        # Main JavaScript logic
 │   ├── data.json        # Wildlife species data
-├── templates/           # HTML templates (for Flask if needed)
+├── templates/           # HTML templates
 │   ├── index.html       # Main UI
-├── app.py               # Flask backend (if used)
+├── app.py               # Flask backend
 ├── best.pt              # yolov8 model
 ├── requirements.txt     # Python dependencies
 ├── README.md            # Project Documentation
@@ -33,11 +35,11 @@
 Model can detect the following species:
 
 ```
-['Iguana', 'Indian Elephant', 'Indian Wolf', 'Tiger', 'White Tiger', 'Antelope', 'Asiatic Lion', 
+'Iguana', 'Indian Elephant', 'Indian Wolf', 'Tiger', 'White Tiger', 'Antelope', 'Asiatic Lion', 
  'Barking Deer', 'Bengal Tiger', 'Asiatic Black Bear', 'Blackbuck', 'Chimpanzee', 'Gharial', 
  'Indian Bison', 'Indian Rock Python', 'Jackal', 'King Cobra', 'Leopard', 'Lion-Tailed Macaque', 
  'Monkey', 'Nilgiri Tahr', 'One-Horned Rhino', 'Orangutan', 'Peacock', 'Porcupine', 'Red Panda', 
- 'Indian Rhinoceros', 'Sambar Deer', 'Sloth Bear', 'Snow Leopard', 'Indian Star Tortoise']
+ 'Indian Rhinoceros', 'Sambar Deer', 'Sloth Bear', 'Snow Leopard', 'Indian Star Tortoise'
 ```
 
 ---
@@ -56,21 +58,17 @@ pip install -r requirements.txt
 
 ### **3️⃣ Run the Application**
 ```sh
-python app.py
-```
-or if using **Flask**:
-```sh
-flask run
+python wsgi.py
 ```
 
 ### **4️⃣ Access the Web Interface**
-Go to `http://127.0.0.1:5000` in your browser.
+Go to `http://127.0.0.1:8000` in your browser.
 
 ---
 
 ## **🖼️ Screenshots**
 ```md
-![image](https://github.com/user-attachments/assets/719aa45a-f6dc-448f-bbfe-529b1b676efe)
+(https://github.com/user-attachments/assets/719aa45a-f6dc-448f-bbfe-529b1b676efe)
 
 ```
 
