@@ -16,10 +16,10 @@
 ## **📂 Project Structure**
 ```
 ├── static/       # Static assets (CSS, JS, images, data)
-│   ├── css
-│   │   ├── styles.css       # Main CSS file
-│   ├── js
-│   │   ├── script.js        # Main JavaScript logic
+│   ├── css/
+│   │   ├── styles.css   # Main CSS file
+│   ├── js/
+│   │   ├── script.js    # Main JavaScript logic
 │   ├── data.json        # Wildlife species data
 ├── templates/           # HTML templates
 │   ├── index.html       # Main UI
