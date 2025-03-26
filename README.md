@@ -67,7 +67,7 @@ Go to `http://127.0.0.1:8000` in your browser.
 
 ## **🖼️ Screenshots**
 ```md
-(https://github.com/user-attachments/assets/719aa45a-f6dc-448f-bbfe-529b1b676efe)
+!(https://github.com/user-attachments/assets/719aa45a-f6dc-448f-bbfe-529b1b676efe)
 
 ```
 
